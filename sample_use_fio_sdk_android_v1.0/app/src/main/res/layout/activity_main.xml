@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mideas.example.MainActivity">
+
+    <include
+        android:id="@+id/connectivity_status_layout"
+        layout="@layout/chat_connectivity_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectivity_status_layout"
+        android:gravity="center" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/sp_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUser"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:entries="@array/list_friend_name" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_user"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btn_dis_connect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_user"
+        android:enabled="false"
+        android:text="Disconnect" />
+
+
+    <Button
+        android:id="@+id/btn_start_call"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_connect"
+        android:enabled="false"
+        android:text="start call" />
+
+    <Button
+        android:id="@+id/btn_start_chat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_connect"
+        android:enabled="false"
+        android:text="start chat" />
+
+    <Button
+        android:id="@+id/btn_start_history_call"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start_call"
+        android:enabled="false"
+        android:text="History call" />
+
+    <Button
+        android:id="@+id/btn_start_history_chat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_start_chat"
+        android:enabled="false"
+        android:text="History chat" />
+
+    <Button
+        android:id="@+id/btn_start_contact"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start_history_chat"
+        android:enabled="false"
+        android:text="Contact" />
+
+    <Button
+        android:id="@+id/btn_start_create_group"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_start_history_chat"
+        android:enabled="false"
+        android:text="Create group" />
+
+    <Button
+        android:id="@+id/btn_start_setting"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start_create_group"
+        android:enabled="false"
+        android:text="Setting" />
+
+    <Button
+        android:id="@+id/btn_start_user_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_start_create_group"
+        android:enabled="false"
+        android:text="Info user" />
+
+</RelativeLayout>
