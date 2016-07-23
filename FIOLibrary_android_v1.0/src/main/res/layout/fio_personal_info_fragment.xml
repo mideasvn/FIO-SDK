@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <!--<data>-->
+
+        <!--<variable-->
+            <!--name="viewModel"-->
+            <!--type="com.mideas.fio.viewModel.PersonalInfoViewModel" />-->
+    <!--</data>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include
+                android:id="@+id/ll_header"
+                layout="@layout/authen_ab_create_info" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView xmlns:bind="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:paddingBottom="1dip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- PROFILE -->
+                    <include
+                        android:id="@+id/profile_header"
+                        layout="@layout/fio_profile_header_personal_info"
+                       />
+                    <!--bind:viewModel="@{viewModel}"-->
+                    <LinearLayout
+                        android:id="@+id/profile_upload_picture"
+                        style="@style/RippleBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_width"
+                            android:layout_height="@dimen/setting_icon_height"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/profile_camera" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_picture_text_big"
+                                android:textSize="@dimen/text_size_level_4" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_picture_text_small"
+                                android:textSize="@dimen/text_size_level_2" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_height_small"
+                            android:layout_height="@dimen/setting_icon_height_small"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/setting_arrow_right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/listview_divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_width"
+                            android:layout_height="@dimen/setting_icon_height"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/profile_name" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_name_text_big"
+                                android:textSize="@dimen/text_size_level_4" />
+
+                            <EditText
+                                android:id="@+id/edit_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/primaryGrayFont"
+                                android:textSize="@dimen/text_size_level_2" />
+                            <!--android:text="@{viewModel.name}"-->
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_height_small"
+                            android:layout_height="@dimen/setting_icon_height_small"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/setting_arrow_right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/listview_divider" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/setting_icon_width"
+                                android:layout_height="@dimen/setting_icon_height"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/profile_status" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/profile_status_text_big"
+                                    android:textSize="@dimen/text_size_level_4" />
+
+                                <EditText
+                                    android:id="@+id/edit_status"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+
+                                    android:inputType="textCapSentences"
+                                    android:textColor="@color/primaryGrayFont"
+                                    android:textSize="@dimen/text_size_level_2" />
+                                <!--android:text="@{viewModel.status}"-->
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/setting_icon_height_small"
+                                android:layout_height="@dimen/setting_icon_height_small"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/setting_arrow_right"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/listview_divider">
+
+                        </View>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_language"
+                        style="@style/RippleBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_width"
+                            android:layout_height="@dimen/setting_icon_height"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/profile_language" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_language_text_big"
+                                android:textSize="@dimen/text_size_level_4" />
+
+                            <TextView
+                                android:id="@+id/edt_national"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="@dimen/text_size_level_2" />
+                            <!--android:text="@{viewModel.language}"-->
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_height_small"
+                            android:layout_height="@dimen/setting_icon_height_small"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/setting_arrow_right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/listview_divider"></View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_birtday"
+                        style="@style/RippleBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_width"
+                            android:layout_height="@dimen/setting_icon_height"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/profile_birthday" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_birthday_text_big"
+                                android:textSize="@dimen/text_size_level_4" />
+
+                            <TextView
+                                android:id="@+id/tv_brith"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="@dimen/text_size_level_2" />
+                            <!--android:text="@{viewModel.brithDay}"-->
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_height_small"
+                            android:layout_height="@dimen/setting_icon_height_small"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/setting_arrow_right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/listview_divider"></View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_gender"
+                        style="@style/RippleBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_width"
+                            android:layout_height="@dimen/setting_icon_height"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/profile_gender" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profile_gender_text_big"
+                                android:textSize="@dimen/text_size_level_4" />
+
+                            <TextView
+                                android:id="@+id/tv_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+
+                                android:textSize="@dimen/text_size_level_2" />
+                            <!--android:text="@{viewModel.sex}"-->
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/setting_icon_height_small"
+                            android:layout_height="@dimen/setting_icon_height_small"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/setting_arrow_right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"></View>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>
