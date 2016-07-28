@@ -28,7 +28,9 @@ o	Cài đặt trong file build.gradle:
 ![](https://s31.postimg.org/og30g0j9n/Screen_Shot_2016_07_26_at_2_52_01_PM.png)
 ### 2.2	AndroidManifest.xml
 o	FIO SDK đòi hỏi một số permissions và references (gcm , google map api key ...) được cài đặt trong tập tin AndroidManifest.xml ở ứng dụng của bạn. Những điều khoản đó cho phép SDK để giám sát trạng thái mạng và nhận tin nhắn từ Google Cloud Messaging ... Dưới đây là một ví dụ với một gói com.example. Lớp Application.java của bạn phải extends FIOApplication.
+
 ![](https://s31.postimg.org/re1cvy0mj/Screen_Shot_2016_07_26_at_2_53_22_PM.png)
+
 o	Cài đặt Google Maps API key:  FIO SDK có sử dụng Google Maps API cho tính năng chia sẽ vị trí trong chat. Cần thiết lập chứng thực từ Google Maps API tham khảo các liên kết sau đây để lấy được keys api của riêng bạn và thay thế nó trong AndroidManifest.xml: 
 https://developers.google.com/maps/documentation/android-api/signup
 
@@ -57,10 +59,12 @@ o	Để một người dùng để chat hoặc gọi điện thoại, bạn ph�
 ![](https://s32.postimg.org/ti77b7e7p/Screen_Shot_2016_07_26_at_2_58_13_PM.png) 
 
 Bạn phải đăng ký lắng nghe sự kiện kết nối và chức thực FioConnectListener, các phương thức chủ yếu: connected, disconnected, connect failed...
+
 ![](https://s31.postimg.org/96rhrdy9n/Screen_Shot_2016_07_26_at_2_58_49_PM.png)
 
 ### 3.4	Lớp FioUserListener
 FioUserListener phải được đăng ký ngay khi khởi tạo đối tượng FioClient. Nó sử dụng để lấy các thông tin cơ bản của người sử dụng ứng dụng, bao gồm: name, avatar... để hiển thị trên màn hình chat hoặc gọi điện.
+
 ![](https://s32.postimg.org/w4qivt9id/Screen_Shot_2016_07_26_at_2_59_35_PM.png)
 
 Trong hàm JSONArray getListFriend() có thể return null để lấy danh sách bạn bè từ server Mideas hoặc truyền vào danh sách bạn bè của bạn như trong ví dụ.
