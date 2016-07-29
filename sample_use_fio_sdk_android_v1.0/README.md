@@ -9,7 +9,7 @@ Dưới đây là hướng dẫn chi tiết (step by step) giúp cho việc tíc
 
 Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đầu tiên bạn cần phải cài đặt Android Studio (link cài đặt bên dưới): 
 
-![](https://s32.postimg.org/5b63qxjw5/Screen_Shot_2016_07_26_at_2_48_32_PM.png)
+![](https://s32.postimg.org/xp8t7aflh/Screen_Shot_2016_07_29_at_8_47_26_AM.png)
 
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
