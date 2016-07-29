@@ -13,12 +13,12 @@ Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đ�
 
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
-- B1: Khởi tạo 1 tài khoản FIO (https://mideasvn.com/developers/signin). 
-- B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . 
-
-Khi project được tạo ra, Mideas cung cấp cho bạn :
+B1: Khởi tạo 1 tài khoản FIO (https://www.mideasvn.com/developers). 
+B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . Khi project được tạo ra, Mideas cung cấp cho bạn:
 -	AppID: ID ứng dụng
--	RSA public key & RSA private key: Một cặp khóa RSA (khóa công khai được sử dụng trên ứng dụng của bạn, chìa khóa riêng được sử dụng trên máy chủ của bạn ) .
+-	RSA public key & RSA private key: Một cặp khóa RSA (khóa công khai được sử dụng trên ứng dụng của bạn, chìa khóa riêng được sử dụng trên máy chủ của bạn).
+B3: Tạo 1 key sử dụng Google Map cho ứng dụng iOS trên trang chủ Google Developer Console > Google Map
+
 ![](https://s31.postimg.org/d3y839xkr/Untitled.png)
 
 Các hướng dẫn sau đây sẽ giúp bạn tích hợp FIO SDK vào ứng dụng của bạn:
