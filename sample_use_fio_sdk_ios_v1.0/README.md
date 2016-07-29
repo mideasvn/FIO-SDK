@@ -62,7 +62,6 @@ o	FIO_SDK chứa các hàm delegate dùng để thông báo sự kiện cho các
 + Thêm một contact thành công
 
 ![](https://s32.postimg.org/63brvhf4l/Screen_Shot_2016_07_29_at_9_07_42_AM.png)
-
 + Một contact trong danh bạ đã deactive account (Xoá tài khoản)
 ![](https://s32.postimg.org/b5gj8rs51/Screen_Shot_2016_07_29_at_9_08_39_AM.png)
 + Tài khoản bị đăng nhập trên một thiết bị khác
