@@ -93,5 +93,5 @@ Trong hàm JSONArray getListFriend() có thể return null để lấy danh sác
 Dừng kết nối tới server FIO service và thoát khỏi hệ thống 
 ![](https://s32.postimg.org/670b5r0x1/Screen_Shot_2016_07_26_at_3_04_52_PM.png)
 
-
+The product created by MIDEAS Co., ltd Contact: wwww.mideasvn.com - support@mideasvn.com - 0977.705.134
 
