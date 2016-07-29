@@ -25,6 +25,7 @@ B3: Tạo 1 key sử dụng Google Map cho ứng dụng iOS trên trang chủ Go
 ![](https://s31.postimg.org/d3y839xkr/Untitled.png)
 
 Các hướng dẫn sau đây sẽ giúp bạn tích hợp FIO SDK vào ứng dụng của bạn:
+
 o	Import FIO_SDK.framework (Lưu ý: Do kiến trúc khi biên dịch của Simulator và device là khác nhau nên chúng tôi phân thành 2 thư mục để bạn có thể dễ dàng phát triển 
 -	Debug-iphoneos khi build ứng dụng lên device.
 -	Debug-iphonesimulator khi build ứng dụng lên simulator.
@@ -46,6 +47,7 @@ o	Import FIO_SDK.bundle chứa những file reources bao gồm
 -	appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website www.mideasvn.com để khởi tạo dịch vụ
 -	GoogleMap key cho việc load bản đồ.
 Ví dụ:
+
 ![](https://s32.postimg.org/4ntydrxtx/Screen_Shot_2016_07_29_at_9_04_03_AM.png)
 
 ![](https://s32.postimg.org/vinldvved/Screen_Shot_2016_07_29_at_9_04_18_AM.png)
@@ -58,13 +60,16 @@ o	FIO_SDK có một lớp đối tượng FIO_Manager để tương tác với d
 ### 3.2	Delegate
 o	FIO_SDK chứa các hàm delegate dùng để thông báo sự kiện cho các lớp màn hình mong muốn nhận biết sự thay đổi như:
 + Thêm một contact mới thành công
+
 ![](https://s32.postimg.org/63brvhf4l/Screen_Shot_2016_07_29_at_9_07_42_AM.png)
 + Một contact trong danh bạ đã deactive account (Xoá tài khoản)
 ![](https://s32.postimg.org/b5gj8rs51/Screen_Shot_2016_07_29_at_9_08_39_AM.png)
 + Tài khoản bị đăng nhập trên một thiết bị khác
 ![](https://s31.postimg.org/69i1p4ptn/Screen_Shot_2016_07_29_at_9_09_25_AM.png)
+
 o	Để có thể nhận thông báo này thì cần đăng ký sự kiện lắng nghe và thêm các phương thức mong muốn lắng nghe từ các lớp cụ thể.
 ![](https://s31.postimg.org/mhy9ynoe3/Screen_Shot_2016_07_29_at_9_10_00_AM.png)
+
 o	Xoá đăng ký nhận thông báo khi không còn nhu cầu sử dụng
 ![](https://s32.postimg.org/3z4lby2ol/Screen_Shot_2016_07_29_at_9_10_21_AM.png)
 
@@ -76,6 +81,7 @@ o	Để sử dụng tính năng Call or Chat, bạn phải chứng thực bảo 
 
 B1: Đăng ký tài khoản với định danh user(username,phone) và tham số chứng thực(token,password mã hoá) để server mIdeas dùng để chứng thực với server của bạn,đảm bảo rằng tài khoản là hợp lệ
 ![](https://s31.postimg.org/hrhp26f6z/Screen_Shot_2016_07_29_at_9_15_48_AM.png)
+
 B2: Xoá tài khoản đăng ký
 ![](https://s31.postimg.org/gh2f70knf/Screen_Shot_2016_07_29_at_9_16_32_AM.png)
 
