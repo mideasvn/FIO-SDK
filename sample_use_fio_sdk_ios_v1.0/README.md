@@ -110,5 +110,5 @@ B2: Xoá tài khoản đăng ký
 Dừng kết nối tới server FIO service và thoát khỏi hệ thống
 ![](https://s32.postimg.org/b11oc8yqd/Screen_Shot_2016_07_29_at_9_24_00_AM.png)
 
-
+The product created by MIDEAS Co., ltd Contact: wwww.mideasvn.com - support@mideasvn.com - 0977.705.134
 
