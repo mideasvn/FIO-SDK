@@ -14,7 +14,7 @@ Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đ�
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
 
-B1: Khởi tạo 1 tài khoản FIO (https://www.mideasvn.com/developers). 
+B1: Khởi tạo 1 tài khoản FIO (https://mideasvn.com/developers/signin). 
 
 B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . Khi project được tạo ra, Mideas cung cấp cho bạn:
 -	AppID: ID ứng dụng
@@ -44,7 +44,7 @@ o	Import FIO_SDK.bundle chứa những file reources bao gồm
 
 ## 3.	KẾT NỐI & TÍCH HỢP:
 ### 3.1	Cấu hình các tham số được yêu cầu trong bước cài đặt bao gồm
--	appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website www.mideasvn.com để khởi tạo dịch vụ
+-	appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website https://mideasvn.com/developers/signin để khởi tạo dịch vụ
 -	GoogleMap key cho việc load bản đồ.
 Ví dụ:
 
