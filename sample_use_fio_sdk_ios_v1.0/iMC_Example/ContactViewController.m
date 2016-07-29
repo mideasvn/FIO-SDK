@@ -82,7 +82,7 @@
         UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setFrame:CGRectMake(2.0, 2.0, 40, 40)];
         [button addTarget:self action:@selector(addNewContact) forControlEvents:UIControlEventTouchUpInside];
-        UIImage* image = [UIImage imageNamed:@"4_contact_right_add"];
+        UIImage* image = [UIImage imageNamed:@"contact_add"];
         [button setImage:image forState:UIControlStateNormal];
         [button setContentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft];
         UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 40.0, 40.0)];

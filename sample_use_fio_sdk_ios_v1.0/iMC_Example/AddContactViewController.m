@@ -41,7 +41,7 @@
         [button setContentHorizontalAlignment: UIControlContentHorizontalAlignmentLeft];
         button.titleLabel.font = [UIFont systemFontOfSize:16];
         [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-        [button setTitle:@"cancel" forState:UIControlStateNormal];
+        [button setTitle:@"Cancel" forState:UIControlStateNormal];
         
         UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 60.0, 40.0)];
         [customView addSubview:button];
@@ -60,16 +60,16 @@
     //
     int change = 1;
     //Enter other username which you want added
-    tfUsername = [[UITextField alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
+    tfUsername = [[UITextField alloc] initWithFrame:CGRectMake(0, 70, self.view.frame.size.width, 40)];
     tfUsername.layer.borderWidth = 1.0f;
     tfUsername.layer.borderColor = [UIColor whiteColor].CGColor;
     tfUsername.placeholder = @"Username";
     tfUsername.delegate = self;
-    tfUsername.text = @"son_test";
+    tfUsername.text = @"fioclient1";
     [self.view addSubview:tfUsername];
     
     //Enter your Descriptions
-    tfDisplayName = [[UITextField alloc] initWithFrame:CGRectMake(0, 70, self.view.frame.size.width, 40)];
+    tfDisplayName = [[UITextField alloc] initWithFrame:CGRectMake(0, 120, self.view.frame.size.width, 40)];
     tfDisplayName.layer.borderWidth = 1.0f;
     tfDisplayName.layer.borderColor = [UIColor whiteColor].CGColor;
     tfDisplayName.placeholder = @"Description (Name or notes)";
@@ -81,7 +81,7 @@
 
     //Add button
     UIButton *buttonAdd = [UIButton buttonWithType:UIButtonTypeCustom];
-    buttonAdd.frame = CGRectMake(60, 120, 200, 40);
+    buttonAdd.frame = CGRectMake(60, 170, 200, 40);
     buttonAdd.backgroundColor = [UIColor blueColor];
     buttonAdd.layer.borderWidth = 1.0f;
     buttonAdd.layer.borderColor = [UIColor whiteColor].CGColor;

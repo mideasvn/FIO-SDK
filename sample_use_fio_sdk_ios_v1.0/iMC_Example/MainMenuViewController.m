@@ -101,15 +101,15 @@
 }
 
 - (void)connectAction {
-    FIO_Manager *imc_Manager = [FIO_Manager sharedInstance];
+    FIO_Manager *fio_Manager = [FIO_Manager sharedInstance];
     
     //Check user' token for previous login (Deactive account or Disconnect server if needed_
-    if(imc_Manager.iMC_Token.length > 0){
+    if(fio_Manager.iMC_Token.length > 0){
         //Example for Deactive account (Not recommanded using it because username will delete from message/chat server)
-        [imc_Manager deactiveAccount:^(BOOL success, NSError *error){
+        [fio_Manager deactiveAccount:^(BOOL success, NSError *error){
             if (success) {
                 //Disconnect to Call/Chat server
-                [imc_Manager disconnectToServer];
+                [fio_Manager disconnectToServer];
                 [btConnect setTitle:@"Connect" forState:UIControlStateNormal];
             }
             
@@ -117,20 +117,20 @@
     }
     else{
         //Setup components for Call/Chat Framework (Store local message, push Notification) and Server (Connect,Stream)
-        [imc_Manager setupComponents];
-        imc_Manager.appID = APP_ID;
-        imc_Manager.publicKey = PUBLIC_KEY;
-        imc_Manager.googlemapKey = GOOGLE_MAP_KEY_DEMO;
+        [fio_Manager setupComponents];
+        fio_Manager.appID = APP_ID;
+        fio_Manager.publicKey = PUBLIC_KEY;
+        fio_Manager.googlemapKey = GOOGLE_MAP_KEY_DEMO;
         //Register window/root view for events (Expire token, push views)
         AppDelegate *appDelegate = [AppDelegate getInstance];
-        imc_Manager.rootWindow = appDelegate.window;
-        imc_Manager.rootViewController = appDelegate.navigationController;
+        fio_Manager.rootWindow = appDelegate.window;
+        fio_Manager.rootViewController = appDelegate.navigationController;
         
         //Register Username (ID in your system)
         //If username not register with call/chat server, it auto registered)
         //Result is token (iMC_Token) and it using for next authenticate
         
-        [imc_Manager registerUserIfNeeded:tfUsername.text userCredentials:@"token" displayName:@"son" withHandler:^(BOOL success,NSDictionary *userInfo, NSError *error){
+        [fio_Manager registerUserIfNeeded:tfUsername.text userCredentials:@"token" displayName:@"son" withHandler:^(BOOL success,NSDictionary *userInfo, NSError *error){
             if (success) {
                 //Success. Now, goto features for your user
                 NSLog(@"Success.");

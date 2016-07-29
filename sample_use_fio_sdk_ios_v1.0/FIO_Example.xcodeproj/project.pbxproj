@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC04E5A1D4A1D3000B0785C /* FIO_SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CC04E591D4A1D3000B0785C /* FIO_SDK.bundle */; };
+		0CC04E5C1D4A1D4A00B0785C /* FIO_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC04E5B1D4A1D4A00B0785C /* FIO_SDK.framework */; };
+		0CC04E5D1D4A1D4A00B0785C /* FIO_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC04E5B1D4A1D4A00B0785C /* FIO_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CC171AC1D475A150078CB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171AB1D475A150078CB95 /* main.m */; };
 		0CC171AF1D475A150078CB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171AE1D475A150078CB95 /* AppDelegate.m */; };
 		0CC171B71D475A150078CB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC171B61D475A150078CB95 /* Assets.xcassets */; };
@@ -21,19 +24,16 @@
 		0CC171E01D475C0F0078CB95 /* ContactViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171D31D475C0F0078CB95 /* ContactViewCell.m */; };
 		0CC171E11D475C0F0078CB95 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171D51D475C0F0078CB95 /* ContactViewController.m */; };
 		0CC171E21D475C0F0078CB95 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC171D71D475C0F0078CB95 /* MainMenuViewController.m */; };
-		0CC171EF1D48B37C0078CB95 /* FIO_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC171EE1D48B37C0078CB95 /* FIO_SDK.framework */; };
-		0CC171F01D48B37C0078CB95 /* FIO_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC171EE1D48B37C0078CB95 /* FIO_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CC171F21D48B39B0078CB95 /* FIO_SDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CC171F11D48B39B0078CB95 /* FIO_SDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0CC171C71D475B420078CB95 /* Embed Frameworks */ = {
+		0CC04E5E1D4A1D4A00B0785C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0CC171F01D48B37C0078CB95 /* FIO_SDK.framework in Embed Frameworks */,
+				0CC04E5D1D4A1D4A00B0785C /* FIO_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CC04E591D4A1D3000B0785C /* FIO_SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FIO_SDK.bundle; path = "../FIO_SDK/Debug-iphonesimulator/FIO_SDK.bundle"; sourceTree = "<group>"; };
+		0CC04E5B1D4A1D4A00B0785C /* FIO_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIO_SDK.framework; path = "../FIO_SDK/Debug-iphonesimulator/FIO_SDK.framework"; sourceTree = "<group>"; };
 		0CC171A71D475A150078CB95 /* FIO_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIO_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC171AB1D475A150078CB95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CC171AD1D475A150078CB95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,8 +65,6 @@
 		0CC171D51D475C0F0078CB95 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		0CC171D61D475C0F0078CB95 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		0CC171D71D475C0F0078CB95 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		0CC171EE1D48B37C0078CB95 /* FIO_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIO_SDK.framework; path = "../FIO_SDK/Debug-iphonesimulator/FIO_SDK.framework"; sourceTree = "<group>"; };
-		0CC171F11D48B39B0078CB95 /* FIO_SDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FIO_SDK.bundle; path = "../FIO_SDK/Debug-iphoneos/FIO_SDK.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC171EF1D48B37C0078CB95 /* FIO_SDK.framework in Frameworks */,
+				0CC04E5C1D4A1D4A00B0785C /* FIO_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +82,8 @@
 		0CC1719E1D475A150078CB95 = {
 			isa = PBXGroup;
 			children = (
-				0CC171F11D48B39B0078CB95 /* FIO_SDK.bundle */,
-				0CC171EE1D48B37C0078CB95 /* FIO_SDK.framework */,
+				0CC04E5B1D4A1D4A00B0785C /* FIO_SDK.framework */,
+				0CC04E591D4A1D3000B0785C /* FIO_SDK.bundle */,
 				0CC171A91D475A150078CB95 /* iMC_Example */,
 				0CC171A81D475A150078CB95 /* Products */,
 			);
@@ -143,8 +143,8 @@
 				0CC171A31D475A150078CB95 /* Sources */,
 				0CC171A41D475A150078CB95 /* Frameworks */,
 				0CC171A51D475A150078CB95 /* Resources */,
-				0CC171C71D475B420078CB95 /* Embed Frameworks */,
 				7C3154EFCE376EB698B45C34 /* Find unused imports */,
+				0CC04E5E1D4A1D4A00B0785C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC171F21D48B39B0078CB95 /* FIO_SDK.bundle in Resources */,
+				0CC04E5A1D4A1D3000B0785C /* FIO_SDK.bundle in Resources */,
 				0CC171DE1D475C0F0078CB95 /* contact_add@2x.png in Resources */,
 				0CC171DD1D475C0F0078CB95 /* contact_add.png in Resources */,
 				0CC171DA1D475C0F0078CB95 /* back_btn@2x.png in Resources */,
