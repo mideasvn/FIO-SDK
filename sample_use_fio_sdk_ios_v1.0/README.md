@@ -1,4 +1,4 @@
-# HƯỚNG DẪN TÍCH HỢP VÀ SỬ DỤNG DỊCH VỤ FIO (CALL/CHAT) TRONG ỨNG DỤNG IOS MOBILE
+# HƯỚNG DẪN TÍCH HỢP VÀ SỬ DỤNG DỊCH VỤ FIO (CALL/CHAT/SOCIAL NETWORK) TRONG ỨNG DỤNG IOS MOBILE
 Ghi chú: Một số từ ngữ chuyên ngành sẽ không được dịch ra Tiếng Việt để giữ đúng ý nghĩa của từ.
 
 ## 1.	GIỚI THIỆU
@@ -9,7 +9,7 @@ Dưới đây là hướng dẫn chi tiết (step by step) giúp cho việc tíc
 
 Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đầu tiên bạn cần phải cài đặt Xcode (link cài đặt bên dưới): 
 
-![](https://s32.postimg.org/xp8t7aflh/Screen_Shot_2016_07_29_at_8_47_26_AM.png)
+![](https://s32.postimg.org/fiun82h9x/Screen_Shot_2016_07_29_at_9_25_50_AM.png)
 
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
