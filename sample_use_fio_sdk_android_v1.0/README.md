@@ -13,8 +13,9 @@ Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đ�
 
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
-B1: Khởi tạo 1 tài khoản FIO (https://mideasvn.com/developers/signin). 
-B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . Khi project được tạo ra, Mideas cung cấp cho bạn :
+- B1: Khởi tạo 1 tài khoản FIO (https://mideasvn.com/developers/signin). 
+- B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . 
+Khi project được tạo ra, Mideas cung cấp cho bạn :
 -	AppID: ID ứng dụng
 -	RSA public key & RSA private key: Một cặp khóa RSA (khóa công khai được sử dụng trên ứng dụng của bạn, chìa khóa riêng được sử dụng trên máy chủ của bạn ) .
 ![](https://s31.postimg.org/d3y839xkr/Untitled.png)
@@ -25,6 +26,7 @@ o	Inport module library Mideas vào project
 ![](https://s31.postimg.org/fd2l8xiqj/Untitled.png)
 
 o	Cài đặt trong file build.gradle:
+
 ![](https://s31.postimg.org/og30g0j9n/Screen_Shot_2016_07_26_at_2_52_01_PM.png)
 ### 2.2	AndroidManifest.xml
 o	FIO SDK đòi hỏi một số permissions và references (gcm , google map api key ...) được cài đặt trong tập tin AndroidManifest.xml ở ứng dụng của bạn. Những điều khoản đó cho phép SDK để giám sát trạng thái mạng và nhận tin nhắn từ Google Cloud Messaging ... Dưới đây là một ví dụ với một gói com.example. Lớp Application.java của bạn phải extends FIOApplication.
@@ -36,7 +38,8 @@ https://developers.google.com/maps/documentation/android-api/signup
 
 ## 3.	KẾT NỐI & TÍCH HỢP:
 ### 3.1	Khởi tạo dịch vụ với appId và publicKey đã đăng ký
-Sử dụng appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website www.mideasvn.com để khởi tạo dịch vụ. Ví dụ:
+Sử dụng appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website https://mideasvn.com/developers/signin để khởi tạo dịch vụ. Ví dụ:
+
 ![](https://s31.postimg.org/3xjlrhjzv/Screen_Shot_2016_07_26_at_2_54_20_PM.png)
 
 o	FIO SDK có một FioClient giao diện chính để tương tác với dịch vụ khác trong FIO. Bạn phải khởi tạo đối tượng FioClient (chỉ 1 lần duy nhất) trong hàm khởi tạo chính onCreate().
