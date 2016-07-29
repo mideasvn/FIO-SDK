@@ -76,6 +76,7 @@ o	Xoá đăng ký nhận thông báo khi không còn nhu cầu sử dụng
 
 ### 3.3	Kết nối và chứng thực
 o	Để sử dụng tính năng Call or Chat, bạn phải chứng thực bảo mật rằng đây thực sự là người dùng của bạn bằng các thông tin được xem là như định danh User ID (như UIDs, email addresses, phone numbers, usernames, etc), cái mà chúng tôi gọi là FioUserId. Tài khoản trên hệ thống của bạn sẽ được ghi nhận nếu đã tồn tại hoặc được đăng ký mới khi chưa có trên hệ thống của chúng tôi. (Dưới đây là các bước cơ bản để chứng thực giữa cách tạọ kết nối chứng thực giữa server Mideas và server của bạn. Xem thêm tài liệu server đính kèm.)
+
 Mô hình giao tiếp giữa MIDEAS server và server khách hàng để xác thực tài khoản người dùng.
 ![](https://s31.postimg.org/jin8gxltn/Untitled.png)
 
@@ -89,21 +90,23 @@ B2: Xoá tài khoản đăng ký
 
 ![](https://s31.postimg.org/gh2f70knf/Screen_Shot_2016_07_29_at_9_16_32_AM.png)
 
-B3: MIdeas decrypts Identity Token using RSA 2048 algorithm with the private key generated at step 1. Then MIdeas will use the public key generated at step 1 to encrypt the following string:
+B3: MIDEAS server giải mã Identity Tocken bằng thuật toán RSA 2048 với private key được cấp ở “Phần 2 – Cài đặt”. 
+MIDEAS sẽ sử dụng public key được cấp ở “Phần 2 – Cài đặt” để mã hoá chuỗi dữ liệu:
 
 {" username":"...", " userCredentials":"...", "timestamp": ..., "appId":"...", "code":"..."}
 
-"code" is generated as below:
+“code” được tạo như bên dưới:
 
 md5(appId + "_" + timestamp + "_" + secret_code)
 
-The encryption process returns Authentication Token. MIdeas will send the Authentication Token to your server via Authentication URL (updated at step 1).
+Quá trình mã hoá sẽ trả về Authentication Token. MIDEAS sẽ gửi Authentication Token tới server khách hàng thông qua Authentication URL mà khách hàng đã cập nhật ở "Phần 2 - Cài đặt"
 
-B4: On your server side, you need decrypt Authentication Token receiving from MIdeas server to get the "code". Compare "code" with the following string:
+B4: Server bên khách hàng cần giải mã Authentication Token nhận được từ MIDEAS server để lấy “code”, so sánh “code” vừa nhận được từ MIDEAS server với chuỗi mã hoá bên dưới:
 
 md5(appId + "_" + timestamp + "_" + secret_code)
 
-If they are the same, execute authentication with username and userCredentials on your backend. Please see sample code writing in Java here: 
+Nếu kết quả là giống nhau sẽ xác thực username với userCredentials bên server khách hàng cung cấp và phản hồi kết quả lại cho MIDEAS server.
+Xem code java ví dụ: https://github.com/mideasvn/FIO-SDK/tree/master/sample_use_fio_server_v1.0
 
 
 ## 4.	API HỖ TRỢ NHÀ PHÁT TRIỂN
