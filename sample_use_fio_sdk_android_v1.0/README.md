@@ -52,6 +52,7 @@ o	Để có thể lắng nghe và nhận các tin nhắn cũng như cuộc gọi
 
 ### 3.3	Kết nối và chứng thực
 o	Để một người dùng để chat hoặc gọi điện thoại, bạn phải xác thực lần đầu tiên sử dụng. Mideas sẽ chấp nhận một chuỗi làm ID người dùng ( UID , địa chỉ email , số điện thoại , tên người dùng , vv), mà chúng ta gọi là FioUserId.
+
 Mô hình giao tiếp giữa MIDEAS server và server khách hàng để xác thực tài khoản người dùng.
 ![](https://s31.postimg.org/jin8gxltn/Untitled.png)
 
