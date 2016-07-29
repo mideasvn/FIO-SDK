@@ -52,6 +52,8 @@ o	Để có thể lắng nghe và nhận các tin nhắn cũng như cuộc gọi
 
 ### 3.3	Kết nối và chứng thực
 o	Để một người dùng để chat hoặc gọi điện thoại, bạn phải xác thực lần đầu tiên sử dụng. Mideas sẽ chấp nhận một chuỗi làm ID người dùng ( UID , địa chỉ email , số điện thoại , tên người dùng , vv), mà chúng ta gọi là FioUserId.
+Mô hình giao tiếp giữa MIDEAS server và server khách hàng để xác thực tài khoản người dùng.
+![](https://s31.postimg.org/jin8gxltn/Untitled.png)
 
 •	Khởi đầu: Đăng ký tài khoản và nhận key chứng thực tại https://www.mideasvn.com/developers/signin
 ![](https://s31.postimg.org/9zt2nd9az/Screen_Shot_2016_07_26_at_2_57_22_PM.png)
@@ -65,6 +67,25 @@ o	Để một người dùng để chat hoặc gọi điện thoại, bạn ph�
 Bạn phải đăng ký lắng nghe sự kiện kết nối và chức thực FioConnectListener, các phương thức chủ yếu: connected, disconnected, connect failed...
 
 ![](https://s31.postimg.org/96rhrdy9n/Screen_Shot_2016_07_26_at_2_58_49_PM.png)
+
+•	Bước 3: MIDEAS server giải mã Identity Tocken bằng thuật toán RSA 2048 với private key được cấp ở “Phần 2 – Cài đặt”. 
+MIDEAS sẽ sử dụng public key được cấp ở “Phần 2 – Cài đặt” để mã hoá chuỗi dữ liệu:
+
+{" username":"...", " userCredentials":"...", "timestamp": ..., "appId":"...", "code":"..."}
+
+“code” được tạo như bên dưới:
+
+md5(appId + "_" + timestamp + "_" + secret_code)
+
+Quá trình mã hoá sẽ trả về Authentication Token. MIDEAS sẽ gửi Authentication Token tới server khách hàng thông qua Authentication URL mà khách hàng đã cập nhật ở "Phần 2 - Cài đặt"
+
+•	Bước 4: Server bên khách hàng cần giải mã Authentication Token nhận được từ MIDEAS server để lấy “code”, so sánh “code” vừa nhận được từ MIDEAS server với chuỗi mã hoá bên dưới:
+
+md5(appId + "_" + timestamp + "_" + secret_code)
+
+Nếu kết quả là giống nhau sẽ xác thực username với userCredentials bên server khách hàng cung cấp và phản hồi kết quả lại cho MIDEAS server.
+Xem code java ví dụ: https://github.com/mideasvn/FIO-SDK/tree/master/sample_use_fio_server_v1.0
+
 
 ### 3.4	Lớp FioUserListener
 FioUserListener phải được đăng ký ngay khi khởi tạo đối tượng FioClient. Nó sử dụng để lấy các thông tin cơ bản của người sử dụng ứng dụng, bao gồm: name, avatar... để hiển thị trên màn hình chat hoặc gọi điện.
