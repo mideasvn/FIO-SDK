@@ -60,7 +60,6 @@ o	FIO_SDK có một lớp đối tượng FIO_Manager để tương tác với d
 ### 3.2	Delegate
 o	FIO_SDK chứa các hàm delegate dùng để thông báo sự kiện cho các lớp màn hình mong muốn nhận biết sự thay đổi như:
 + Thêm một contact mới thành công
-
 ![](https://s32.postimg.org/63brvhf4l/Screen_Shot_2016_07_29_at_9_07_42_AM.png)
 + Một contact trong danh bạ đã deactive account (Xoá tài khoản)
 ![](https://s32.postimg.org/b5gj8rs51/Screen_Shot_2016_07_29_at_9_08_39_AM.png)
@@ -68,6 +67,7 @@ o	FIO_SDK chứa các hàm delegate dùng để thông báo sự kiện cho các
 ![](https://s31.postimg.org/69i1p4ptn/Screen_Shot_2016_07_29_at_9_09_25_AM.png)
 
 o	Để có thể nhận thông báo này thì cần đăng ký sự kiện lắng nghe và thêm các phương thức mong muốn lắng nghe từ các lớp cụ thể.
+
 ![](https://s31.postimg.org/mhy9ynoe3/Screen_Shot_2016_07_29_at_9_10_00_AM.png)
 
 o	Xoá đăng ký nhận thông báo khi không còn nhu cầu sử dụng
@@ -83,6 +83,7 @@ B1: Đăng ký tài khoản với định danh user(username,phone) và tham s�
 ![](https://s31.postimg.org/hrhp26f6z/Screen_Shot_2016_07_29_at_9_15_48_AM.png)
 
 B2: Xoá tài khoản đăng ký
+
 ![](https://s31.postimg.org/gh2f70knf/Screen_Shot_2016_07_29_at_9_16_32_AM.png)
 
 ## 4.	API HỖ TRỢ NHÀ PHÁT TRIỂN
