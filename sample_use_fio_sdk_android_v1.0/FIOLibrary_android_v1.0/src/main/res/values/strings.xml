@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">FioLibrary</string>
-    <string name="not_connect_service">Not connected</string>
-    <string name="user_name_null_or_credentials">Username parameter, credentials or fullname parameter not null</string>
-</resources>
