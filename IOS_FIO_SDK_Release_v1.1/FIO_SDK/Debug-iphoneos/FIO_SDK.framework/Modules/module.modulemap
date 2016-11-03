@@ -1,0 +1,6 @@
+framework module FIO_SDK {
+  umbrella header "FIO_SDK.h"
+
+  export *
+  module * { export * }
+}

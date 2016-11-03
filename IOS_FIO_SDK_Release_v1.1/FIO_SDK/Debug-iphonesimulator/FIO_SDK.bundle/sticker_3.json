@@ -1,0 +1,62 @@
+{
+    "sticker_collection_id" : -1,
+    "sticker_collection_name" : "sticker_3",
+    "items" : [
+               {
+               "item_id" : 0,
+               "img" : "sticker_3_1.png"
+               },
+               {
+               "item_id" : 1,
+               "img" : "sticker_3_2.png"
+               },
+               {
+               "item_id" : 2,
+               "img" : "sticker_3_3.png"
+               },
+               {
+               "item_id" : 3,
+               "img" : "sticker_3_4.png"
+               },
+               {
+               "item_id" : 4,
+               "img" : "sticker_3_5.png"
+               },
+               {
+               "item_id" : 5,
+               "img" : "sticker_3_6.png"
+               },
+               {
+               "item_id" : 6,
+               "img" : "sticker_3_7.png"
+               },
+               {
+               "item_id" : 7,
+               "img" : "sticker_3_8.png"
+               },
+               {
+               "item_id" : 8,
+               "img" : "sticker_3_9.png"
+               },
+               {
+               "item_id" : 9,
+               "img" : "sticker_3_10.png"
+               },
+               {
+               "item_id" : 10,
+               "img" : "sticker_3_11.png"
+               },
+               {
+               "item_id" : 11,
+               "img" : "sticker_3_12.png"
+               },
+               {
+               "item_id" : 12,
+               "img" : "sticker_3_13.png"
+               },
+               {
+               "item_id" : 13,
+               "img" : "sticker_3_14.png"
+               }
+            ]
+}

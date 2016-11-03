@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/message_setting_name_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_setting_profile_height">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/chat_setting_margin_left"
+                android:layout_marginRight="@dimen/chat_setting_margin_rightt"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center">
+
+                    <com.mideas.fio.core.library.CircleImageView.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/message_row_receiver_avatar"
+                        android:layout_width="@dimen/setting_profile_avatar_width"
+                        android:layout_height="@dimen/setting_profile_avatar_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_call_avatar_history_male"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="3dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <com.mideas.fio.core.core.customui.EllipsisTextView
+                        android:id="@+id/message_setting_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/setting_margin_bottom"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="David Letterman"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/setting_text_size_large_setting" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:gravity="center_vertical">
+
+
+                        <TextView
+                            android:id="@+id/message_setting_country_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Viet Nam"
+                            android:textColor="@color/bg"
+                            android:textSize="@dimen/setting_text_size_small" />
+
+                        <TextView
+                            android:id="@+id/message_setting_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/message_setting_country_text"
+                            android:text=" * 0167 45598 44"
+                            android:textColor="@color/bg"
+                            android:textSize="@dimen/setting_text_size_small" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/quotation_start"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/quotation_start"
+                            android:scaleType="centerCrop" />
+
+
+                        <com.mideas.fio.core.core.customui.EllipsisTextView
+                            android:id="@+id/message_setting_stauts_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="mot hai ba"
+                            android:textColor="@color/bg"
+                            android:textSize="@dimen/setting_text_size_small" />
+
+                        <ImageView
+                            android:id="@+id/quotation_end"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/quotation_end"
+                            android:scaleType="centerCrop" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_setting_name_not_sky_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_setting_profile_height"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/chat_setting_margin_left"
+                android:layout_marginRight="@dimen/chat_setting_margin_rightt"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center">
+
+                    <com.mideas.fio.core.library.CircleImageView.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/message_row_receiver_not_sky_avatar"
+                        android:layout_width="@dimen/setting_profile_avatar_width"
+                        android:layout_height="@dimen/setting_profile_avatar_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_call_avatar_history_male" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <com.mideas.fio.core.core.customui.EllipsisTextView
+                        android:id="@+id/message_setting_name_not_sky_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/setting_margin_bottom"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="David Letterman"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/setting_text_size_large_setting" />
+
+
+                    <TextView
+                        android:id="@+id/message_setting_country_not_sky_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Viet Nam"
+                        android:textColor="@color/bg"
+                        android:textSize="@dimen/setting_text_size_small" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/quotation_start"
+                            android:scaleType="centerCrop" />
+
+
+                        <com.mideas.fio.core.core.customui.EllipsisTextView
+                            android:id="@+id/tvStatus_not_sky"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:singleLine="true"
+                            android:text="@string/text_status_not_sky"
+                            android:textColor="@color/bg"
+                            android:textSize="@dimen/setting_text_size_small" />
+
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/quotation_end"
+                            android:scaleType="centerCrop" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_setting_group_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_setting_profile_height"
+            android:background="@drawable/selector_click_bg"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/chat_setting_margin_left"
+                android:layout_marginRight="@dimen/chat_setting_margin_rightt"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center">
+
+                    <com.mideas.fio.core.library.CircleImageView.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/message_row_receiver_group_avatar"
+                        android:layout_width="@dimen/setting_profile_avatar_width"
+                        android:layout_height="@dimen/setting_profile_avatar_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_call_avatar_history_male" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <com.mideas.fio.core.core.customui.EllipsisTextView
+                        android:id="@+id/message_setting_group_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/setting_margin_bottom"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="David Letterman"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/setting_text_size_large_setting" />
+
+
+                    <com.mideas.fio.core.core.customui.EllipsisTextView
+                        android:id="@+id/message_setting_group_rename_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:singleLine="true"
+                        android:text="@string/group"
+                        android:textColor="@color/bg"
+                        android:textSize="@dimen/setting_text_size_small" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/dip10"
+                    android:layout_height="@dimen/dip10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dip5"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_arrow" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

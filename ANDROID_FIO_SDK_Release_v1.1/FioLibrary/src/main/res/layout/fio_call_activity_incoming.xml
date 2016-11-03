@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/llFuntionBottom"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--INFO USER -->
+    <com.mideas.fio.core.library.RippleBackground.RippleBackground
+        android:id="@+id/ripperIncomingAvatar"
+        android:layout_width="@dimen/call_avatar_item_width_wave"
+        android:layout_height="@dimen/call_avatar_item_width_wave"
+        android:layout_gravity="center"
+        app:rb_color="@color/white"
+        app:rb_duration="2000"
+        app:rb_radius="50dp"
+        app:rb_rippleAmount="3"
+        app:rb_scale="2">
+
+        <com.mideas.fio.core.library.CircleImageView.CircleImageView
+            android:id="@+id/ivIncomingAvatar"
+            android:layout_width="@dimen/call_avatar_item_width"
+            android:layout_height="@dimen/call_avatar_item_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_call_avatar_history_male"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="3dp" />
+    </com.mideas.fio.core.library.RippleBackground.RippleBackground>
+
+    <TextView
+        android:id="@+id/tvIncomingActivityCallUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingLeft="@dimen/dip30"
+        android:paddingRight="@dimen/dip30"
+        android:text="Nguyễn Thị Minh Khai"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dip50" />
+
+    <TextView
+        android:id="@+id/tvInComingActivityStatusCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIncomingActivityCallUser"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Calling..."
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+    <!--BACK GROUND CALL-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/dip20"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/ivInComingActivityAcceptCall"
+                android:layout_width="@dimen/dip60"
+                android:layout_height="@dimen/dip60"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dip15"
+                android:src="@drawable/ic_call_pad"
+                app:backgroundTint="@color/colorPrimary_call"
+                app:elevation="2dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/ivInComingActivityRejectCall"
+                android:layout_width="@dimen/dip60"
+                android:layout_height="@dimen/dip60"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dip15"
+                android:src="@drawable/ic_call_end_not_background"
+                app:backgroundTint="@color/red"
+                app:elevation="2dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
