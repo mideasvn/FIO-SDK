@@ -3,7 +3,7 @@ Ghi chú: Một số từ ngữ chuyên ngành sẽ không được dịch ra Ti
 
 ## 1.	GIỚI THIỆU
 FIO là nền tảng OTT/Message cung cấp thư viện (SDK) & API để giúp cho nhà phát triển dễ dàng tích hợp tính năng gọi điện (call) / trò chuyện (chat) vào trong các ứng dụng mobile.
-FIO SDK được phát triển bởi MIDEAS Co., ltd với đội ngũ nhân viên nhiều có năm kinh nghiệm trong lĩnh vực Mobile và công nghệ.
+FIO SDK được phát triển bởi MIDEAS Co., JSC với đội ngũ nhân viên nhiều có năm kinh nghiệm trong lĩnh vực Mobile và công nghệ.
 
 Dưới đây là hướng dẫn chi tiết (step by step) giúp cho việc tích hợp FIO SDK vào dự án android mobile app của bạn.
 
@@ -14,7 +14,7 @@ Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đ�
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
 
-B1: Khởi tạo 1 tài khoản FIO (https://mideasvn.com/developers/signin). 
+B1: Khởi tạo 1 tài khoản FIO (https://fio.mideasvn.com/developers/signin). 
 
 B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . Khi project được tạo ra, Mideas cung cấp cho bạn:
 -	AppID: ID ứng dụng
@@ -44,7 +44,7 @@ o	Import FIO_SDK.bundle chứa những file reources bao gồm
 
 ## 3.	KẾT NỐI & TÍCH HỢP:
 ### 3.1	Cấu hình các tham số được yêu cầu trong bước cài đặt bao gồm
--	appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website https://mideasvn.com/developers/signin để khởi tạo dịch vụ
+-	appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website https://fio.mideasvn.com/developers/signin để khởi tạo dịch vụ
 -	GoogleMap key cho việc load bản đồ.
 Ví dụ:
 
@@ -80,7 +80,7 @@ o	Để sử dụng tính năng Call or Chat, bạn phải chứng thực bảo 
 Mô hình giao tiếp giữa MIDEAS server và server khách hàng để xác thực tài khoản người dùng.
 ![](https://s31.postimg.org/jin8gxltn/Untitled.png)
 
-Đăng ký tài khoản và nhận key chứng thực tại https://www.mideasvn.com/developers/signin
+Đăng ký tài khoản và nhận key chứng thực tại https://fio.mideasvn.com/developers/signin
 ![](https://s31.postimg.org/9zt2nd9az/Screen_Shot_2016_07_26_at_2_57_22_PM.png)
 
 B1: Đăng ký tài khoản với định danh user(username,phone) và tham số chứng thực(token,password mã hoá) để server mIdeas dùng để chứng thực với server của bạn,đảm bảo rằng tài khoản là hợp lệ
@@ -132,5 +132,5 @@ Xem code java ví dụ: https://github.com/mideasvn/FIO-SDK/tree/master/sample_u
 Dừng kết nối tới server FIO service và thoát khỏi hệ thống
 ![](https://s32.postimg.org/b11oc8yqd/Screen_Shot_2016_07_29_at_9_24_00_AM.png)
 
-The product created by MIDEAS Co., ltd Contact: wwww.mideasvn.com - support@mideasvn.com - 0977.705.134
+The product created by MIDEAS Co., JSC Contact: wwww.mideasvn.com - support@mideasvn.com - 0977.705.134
 

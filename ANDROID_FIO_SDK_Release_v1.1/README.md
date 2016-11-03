@@ -13,7 +13,7 @@ Ghi chú: Để có thể chạy thử nghiệm các dự án mẫu, điều đ�
 
 ## 2.	CÀI ĐẶT
 Để cài đặt SDK lên ứng dụng của bạn, bạn cần :
-- B1: Khởi tạo 1 tài khoản FIO (https://mideasvn.com/developers/signin). 
+- B1: Khởi tạo 1 tài khoản FIO (https://fio.mideasvn.com/developers/signin). 
 - B2: Sau khi tạo tài khoản thành công , bạn cần tạo một project . 
 
 Khi project được tạo ra, Mideas cung cấp cho bạn :
@@ -39,7 +39,7 @@ https://developers.google.com/maps/documentation/android-api/signup
 
 ## 3.	KẾT NỐI & TÍCH HỢP:
 ### 3.1	Khởi tạo dịch vụ với appId và publicKey đã đăng ký
-Sử dụng appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website https://mideasvn.com/developers/signin để khởi tạo dịch vụ. Ví dụ:
+Sử dụng appId và publicKey đã được cấp ở “Phần 2” khi đăng ký ứng dụng trên website https://fio.mideasvn.com/developers/signin để khởi tạo dịch vụ. Ví dụ:
 
 ![](https://s31.postimg.org/3xjlrhjzv/Screen_Shot_2016_07_26_at_2_54_20_PM.png)
 
@@ -56,7 +56,7 @@ o	Để một người dùng để chat hoặc gọi điện thoại, bạn ph�
 Mô hình giao tiếp giữa MIDEAS server và server khách hàng để xác thực tài khoản người dùng.
 ![](https://s31.postimg.org/jin8gxltn/Untitled.png)
 
-•	Khởi đầu: Đăng ký tài khoản và nhận key chứng thực tại https://www.mideasvn.com/developers/signin
+•	Khởi đầu: Đăng ký tài khoản và nhận key chứng thực tại https://fio.mideasvn.com/developers/signin
 ![](https://s31.postimg.org/9zt2nd9az/Screen_Shot_2016_07_26_at_2_57_22_PM.png)
 
 •	Bước 1: Khởi tạo appID và public key (như mô tả tại mục 3.1)
@@ -115,5 +115,5 @@ Trong hàm JSONArray getListFriend() có thể return null để lấy danh sác
 Dừng kết nối tới server FIO service và thoát khỏi hệ thống 
 ![](https://s32.postimg.org/670b5r0x1/Screen_Shot_2016_07_26_at_3_04_52_PM.png)
 
-The product created by MIDEAS Co., ltd Contact: wwww.mideasvn.com - support@mideasvn.com - 0977.705.134
+The product created by MIDEAS Co., JSC Contact: wwww.mideasvn.com - support@mideasvn.com - 0977.705.134
 
