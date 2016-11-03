@@ -106,7 +106,7 @@ B4: Server bên khách hàng cần giải mã Authentication Token nhận đư�
 md5(appId + "_" + timestamp + "_" + secret_code)
 
 Nếu kết quả là giống nhau sẽ xác thực username với userCredentials bên server khách hàng cung cấp và phản hồi kết quả lại cho MIDEAS server.
-Xem code java ví dụ: https://github.com/mideasvn/FIO-SDK/tree/master/sample_use_fio_server_v1.0
+Xem code java ví dụ: https://github.com/mideasvn/FIO-SDK/tree/master/SERVER_FIO_SDK_Release_v1.1
 
 
 ## 4.	API HỖ TRỢ NHÀ PHÁT TRIỂN
