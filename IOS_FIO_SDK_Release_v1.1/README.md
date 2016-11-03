@@ -1,4 +1,4 @@
-., JSC# HƯỚNG DẪN TÍCH HỢP VÀ SỬ DỤNG DỊCH VỤ FIO (CALL/CHAT/SOCIAL NETWORK) TRONG ỨNG DỤNG IOS MOBILE
+# HƯỚNG DẪN TÍCH HỢP VÀ SỬ DỤNG DỊCH VỤ FIO (CALL/CHAT/SOCIAL NETWORK) TRONG ỨNG DỤNG IOS MOBILE
 Ghi chú: Một số từ ngữ chuyên ngành sẽ không được dịch ra Tiếng Việt để giữ đúng ý nghĩa của từ.
 
 ## 1.	GIỚI THIỆU
